@@ -1,3 +1,4 @@
+//selezione griglia nell'html
 const griglia = document.getElementById("griglia");
 console.log(griglia);
 
@@ -6,7 +7,7 @@ console.log(griglia);
 function creazionequadrato(){
     const div = document.createElement("div");
     div.classList.add("quadrato");
-    return div;
+    return div; // div class="quadrato"
 }
 
 console.log(creazionequadrato());
@@ -16,7 +17,7 @@ console.log(creazionequadrato());
 
 //64 quadrati
 
-for(let i = 0; i<100; i++){
+for(let i = 1; i<=100; i++){
     
     let elementoCorrente = creazionequadrato();
     elementoCorrente.innerHTML=`${i}`
